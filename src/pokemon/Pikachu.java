@@ -6,8 +6,6 @@ import ataques.AtaqueRapido;
 import ataques.Placaje;
 
 public class Pikachu extends Pokemon {
-	
-	int PsCombat;
 
 	public Pikachu() {
 		this.name = "Pikachu";

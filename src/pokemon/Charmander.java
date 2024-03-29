@@ -7,8 +7,6 @@ import ataques.Ascuas;
 
 public class Charmander extends Pokemon {
 	
-	int PsCombat;
-	
 	public Charmander() {
 		this.name = "Charmander";
 		this.PsBase= 39;

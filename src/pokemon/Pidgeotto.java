@@ -7,8 +7,6 @@ import ataques.AtaqueRapido;
 
 public class Pidgeotto extends Pokemon {
 	
-	int PsCombat;
-	
 	public Pidgeotto() {
 		this.name = "Pidgeotto";
 		this.PsBase= 51;

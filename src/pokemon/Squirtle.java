@@ -7,8 +7,6 @@ import ataques.Placaje;
 
 public class Squirtle extends Pokemon {
 	
-	int PsCombat;
-	
 	public Squirtle() {
 		this.name = "Squirtle";
 		this.PsBase= 44;

@@ -8,8 +8,6 @@ import ataques.Placaje;
 
 public class Kingler extends Pokemon {
 	
-	int PsCombat;
-	
 	public Kingler() {
 		this.name = "Kingler";
 		this.PsBase= 55;

@@ -7,7 +7,6 @@ import ataques.Somnifero;
 
 public class bulbasaur extends Pokemon {
 
-
 	public bulbasaur() {
 		this.name = "Bulbasaur";
 		this.PsBase= 45;

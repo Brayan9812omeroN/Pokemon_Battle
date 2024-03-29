@@ -7,8 +7,6 @@ import ataques.Infortunio;
 
 public class Muk extends Pokemon {
 	
-	int PsCombat;
-	
 	public Muk() {
 		this.name = "Muk";
 		this.PsBase= 48;

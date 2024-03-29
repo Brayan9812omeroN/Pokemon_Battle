@@ -7,8 +7,6 @@ import ataques.TajoCruzado;
 
 public class Krabby extends Pokemon {
 	
-	int PsCombat;
-	
 	public Krabby() {
 		this.name = "Krabby";
 		this.PsBase= 30;

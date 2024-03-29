@@ -7,8 +7,6 @@ import ataques.GolpeCabeza;
 
 public class Raticate extends Pokemon {
 	
-	int PsCombat;
-	
 	public Raticate() {
 		this.name = "Raticate";
 		this.PsBase= 50;
