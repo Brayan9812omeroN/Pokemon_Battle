@@ -15,17 +15,17 @@ public class Charmander extends Pokemon {
 
 	//Ataques 
 	
-	public int Lanzallamas() {
-        return new Lanzallamas().atack(this.name);
+	public int Lanzallamas(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Lanzallamas().attack(attackingPokemon, pokemonattacked);
     }
-	public int Gruñido() {
-        return new Gruñido().atack(this.name);
+	public int Gruñido(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Gruñido().attack(attackingPokemon, pokemonattacked);
     }
-	public int Arañazo() {
-        return new Arañazo().atack(this.name);
+	public int Arañazo(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Arañazo().attack(attackingPokemon, pokemonattacked);
     }
-	public int Ascuas() {
-        return new Ascuas().atack(this.name);
+	public int Ascuas(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Ascuas().attack(attackingPokemon, pokemonattacked);
     }
 		
 	public void display() {	}

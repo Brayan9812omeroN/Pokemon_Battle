@@ -16,17 +16,17 @@ public class Kingler extends Pokemon {
 
 	//Ataques 
 	
-	public int Hidropulso() {
-        return new Hidropulso().atack(this.name);
+	public int Hidropulso(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Hidropulso().attack(attackingPokemon, pokemonattacked);
     }
-	public int RayoBurbuja() {
-        return new RayoBurbuja().atack(this.name);
+	public int RayoBurbuja(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new RayoBurbuja().attack(attackingPokemon, pokemonattacked);
     }
-	public int Rayo() {
-        return new Rayo().atack(this.name);
+	public int Rayo(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Rayo().attack(attackingPokemon, pokemonattacked);
     }
-	public int Placaje() {
-        return new Placaje().atack(this.name);
+	public int Placaje(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Placaje().attack(attackingPokemon, pokemonattacked);
     }
 		
 	public void display() {	}

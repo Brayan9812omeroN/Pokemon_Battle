@@ -16,17 +16,17 @@ public class Krabby extends Pokemon {
 	
 	//Ataques 
 	
-	public int Burbuja() {
-        return new Burbuja().atack(this.name);
+	public int Burbuja(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Burbuja().attack(attackingPokemon, pokemonattacked);
     }
-	public int RayoBurbuja() {
-        return new RayoBurbuja().atack(this.name);
+	public int RayoBurbuja(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new RayoBurbuja().attack(attackingPokemon, pokemonattacked);
     }
-	public int Placaje() {
-        return new Placaje().atack(this.name);
+	public int Placaje(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Placaje().attack(attackingPokemon, pokemonattacked);
     }
-	public int TajoCruzado() {
-        return new TajoCruzado().atack(this.name);
+	public int TajoCruzado(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new TajoCruzado().attack(attackingPokemon, pokemonattacked);
     }
 
 	public void display() {	}

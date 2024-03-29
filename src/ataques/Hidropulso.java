@@ -1,4 +1,5 @@
 package ataques;
+import abstracts.Pokemon;
 import interfaces.IAtack;
 
 public class Hidropulso implements IAtack{
@@ -6,9 +7,9 @@ public class Hidropulso implements IAtack{
 	private static final int damage = 16;
 	
 	@Override
-	public int atack(String name) {
-		System.out.println("¡" + name + " usa Hidropulso!");
-		return damage;
+	public int attack(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+		System.out.println("¡" + attackingPokemon.getName() + " usa Hidropulso!");
+		return pokemonattacked.setPsCombat(damage);
 	}
 
 }

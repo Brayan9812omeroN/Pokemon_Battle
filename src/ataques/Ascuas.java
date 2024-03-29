@@ -1,4 +1,5 @@
 package ataques;
+import abstracts.Pokemon;
 import interfaces.IAtack;
 
 public class Ascuas implements IAtack{
@@ -6,9 +7,9 @@ public class Ascuas implements IAtack{
 	private static final int damage = 15;
 	
 	@Override
-	public int atack(String name) {
-		System.out.println("¡" + name + " usa Ascuas!");
-		return damage;
+	public int attack(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+		System.out.println("¡" + attackingPokemon.getName() + " usa Ascuas!");
+		return pokemonattacked.setPsCombat(damage);
 	}
 
 }

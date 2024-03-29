@@ -15,17 +15,17 @@ public class Muk extends Pokemon {
 
 	//Ataques 
 	
-	public int Lodo() {
-        return new Lodo().atack(this.name);
+	public int Lodo(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Lodo().attack(attackingPokemon, pokemonattacked);
     }
-	public int BombaLodo() {
-        return new BombaLodo().atack(this.name);
+	public int BombaLodo(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new BombaLodo().attack(attackingPokemon, pokemonattacked);
     }
-	public int AtaqueAcido() {
-        return new AtaqueAcido().atack(this.name);
+	public int AtaqueAcido(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new AtaqueAcido().attack(attackingPokemon, pokemonattacked);
     }
-	public int Infortunio() {
-        return new Infortunio().atack(this.name);
+	public int Infortunio(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Infortunio().attack(attackingPokemon, pokemonattacked);
     }
 	
 	public void display() {	}

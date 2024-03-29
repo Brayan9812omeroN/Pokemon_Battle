@@ -1,4 +1,5 @@
 package ataques;
+import abstracts.Pokemon;
 import interfaces.IAtack;
 
 public class Supersonico implements IAtack{
@@ -6,9 +7,9 @@ public class Supersonico implements IAtack{
 	private static final int damage = 5;
 	
 	@Override
-	public int atack(String name) {
-		System.out.println("¡" + name + " usa Supersonico!");
-		return damage;
+	public int attack(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+		System.out.println("¡" + attackingPokemon.getName() + " usa Supersonico!");
+		return pokemonattacked.setPsCombat(damage);
 	}
 
 }

@@ -1,4 +1,5 @@
 package ataques;
+import abstracts.Pokemon;
 import interfaces.IAtack;
 
 public class AtaqueRapido implements IAtack{
@@ -6,9 +7,9 @@ public class AtaqueRapido implements IAtack{
 	private static final int damage = 8;
 	
 	@Override
-	public int atack(String name) {
-		System.out.println("¡" + name + " usa Ataque Rapido!");
-		return damage;
+	public int attack(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+		System.out.println("¡" + attackingPokemon.getName() + " usa Ataque Rapido!");
+		return pokemonattacked.setPsCombat(damage);
 	}
 
 }

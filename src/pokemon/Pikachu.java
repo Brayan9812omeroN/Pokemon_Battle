@@ -16,17 +16,17 @@ public class Pikachu extends Pokemon {
 
 	//Ataques 
 	
-	public int Impactrueno() {
-        return new Impactrueno().atack(this.name);
+	public int Impactrueno(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Impactrueno().attack(attackingPokemon, pokemonattacked);
     }
-	public int Rayo() {
-        return new Rayo().atack(this.name);
+	public int Rayo(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Rayo().attack(attackingPokemon, pokemonattacked);
     }
-	public int AtaqueRapido() {
-        return new AtaqueRapido().atack(this.name);
+	public int AtaqueRapido(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new AtaqueRapido().attack(attackingPokemon, pokemonattacked);
     }
-	public int Placaje() {
-        return new Placaje().atack(this.name);
+	public int Placaje(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Placaje().attack(attackingPokemon, pokemonattacked);
     }
 	
 	public void display() {	}

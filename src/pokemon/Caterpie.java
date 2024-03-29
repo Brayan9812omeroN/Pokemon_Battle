@@ -15,17 +15,17 @@ public class Caterpie extends Pokemon {
 	
 	//Ataques 
 	
-	public int Placaje() {
-        return new Placaje().atack(this.name);
+	public int Placaje(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Placaje().attack(attackingPokemon, pokemonattacked);
     }
-	public int Tacleada() {
-        return new Tacleada().atack(this.name);
+	public int Tacleada(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Tacleada().attack(attackingPokemon, pokemonattacked);
     }
-	public int Supersonico() {
-        return new Supersonico().atack(this.name);
+	public int Supersonico(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Supersonico().attack(attackingPokemon, pokemonattacked);
     }
-	public int Drenadoras() {
-        return new Drenadoras().atack(this.name);
+	public int Drenadoras(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Drenadoras().attack(attackingPokemon, pokemonattacked);
     }
 
 	public void display() {	}

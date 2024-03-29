@@ -1,7 +1,9 @@
 package interfaces;
 
+import abstracts.Pokemon;
+
 public interface IAtack {
 
-	int atack(String name);
+	int attack(Pokemon attackingPokemon, Pokemon pokemonattacked);
 	
 }

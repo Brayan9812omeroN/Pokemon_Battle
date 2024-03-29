@@ -15,17 +15,17 @@ public class Squirtle extends Pokemon {
 
 	//Ataques 
 	
-	public int PistolaAgua() {
-        return new PistolaAgua().atack(this.name);
+	public int PistolaAgua(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new PistolaAgua().attack(attackingPokemon, pokemonattacked);
     }
-	public int Burbuja() {
-        return new Burbuja().atack(this.name);
+	public int Burbuja(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Burbuja().attack(attackingPokemon, pokemonattacked);
     }
-	public int AtaqueRapido() {
-        return new AtaqueRapido().atack(this.name);
+	public int AtaqueRapido(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new AtaqueRapido().attack(attackingPokemon, pokemonattacked);
     }
-	public int Placaje() {
-        return new Placaje().atack(this.name);
+	public int Placaje(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Placaje().attack(attackingPokemon, pokemonattacked);
     }
 	
 	public void display() {	}

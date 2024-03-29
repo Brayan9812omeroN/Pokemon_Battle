@@ -15,17 +15,17 @@ public class Raticate extends Pokemon {
 	
 	//Ataques 
 	
-	public int HiperColmillo() {
-        return new HiperColmillo().atack(this.name);
+	public int HiperColmillo(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new HiperColmillo().attack(attackingPokemon, pokemonattacked);
     }
-	public int AtaqueRapido() {
-        return new AtaqueRapido().atack(this.name);
+	public int AtaqueRapido(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new AtaqueRapido().attack(attackingPokemon, pokemonattacked);
     }
-	public int Placaje() {
-        return new Placaje().atack(this.name);
+	public int Placaje(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Placaje().attack(attackingPokemon, pokemonattacked);
     }
-	public int GolpeCabeza() {
-        return new GolpeCabeza().atack(this.name);
+	public int GolpeCabeza(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new GolpeCabeza().attack(attackingPokemon, pokemonattacked);
     }
 	
 	public void display() {	}

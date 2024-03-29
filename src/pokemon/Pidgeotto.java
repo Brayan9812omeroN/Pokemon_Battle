@@ -16,17 +16,17 @@ public class Pidgeotto extends Pokemon {
 
 	//Ataques 
 	
-	public int Picotazo() {
-        return new Picotazo().atack(this.name);
+	public int Picotazo(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Picotazo().attack(attackingPokemon, pokemonattacked);
     }
-	public int Remolino() {
-        return new Remolino().atack(this.name);
+	public int Remolino(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Remolino().attack(attackingPokemon, pokemonattacked);
     }
-	public int Tornado() {
-        return new Tornado().atack(this.name);
+	public int Tornado(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new Tornado().attack(attackingPokemon, pokemonattacked);
     }
-	public int AtaqueRapido() {
-        return new AtaqueRapido().atack(this.name);
+	public int AtaqueRapido(Pokemon attackingPokemon, Pokemon pokemonattacked) {
+        return new AtaqueRapido().attack(attackingPokemon, pokemonattacked);
     }
 	
 	public void display() {	}
