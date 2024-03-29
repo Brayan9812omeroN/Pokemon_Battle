@@ -2,29 +2,20 @@ package abstracts;
 
 public abstract class Pokemon {
 	
-	String name;
-	int PsBase ;
-	int Pscombat;
-	
-	public Pokemon(String _name, int _ps) {
-		this.name = _name;
-		this.PsBase = _ps;
-		this.Pscombat = PsBase;
-	}
-	
-	public int getPs() {
-		return Pscombat;
-	}
-
-	public void setPs(int ps) {
-		this.Pscombat = ps;
-	}
+	protected String name;
+	protected int PsBase ;
 
 	public String getName() {
 		return name;
 	}
+	public int getPsBase() {
+		return PsBase;
+	}
 
 	public Pokemon(){}
-	public abstract void display();
+	public void display() {
+		System.out.println("Nombre: " + this.name);
+        System.out.println("Puntos de Salud: " + this.PsBase);
+	}
 	
 }

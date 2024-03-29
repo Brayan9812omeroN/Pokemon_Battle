@@ -3,13 +3,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		int daño = 10;
+		int daño;
 		
-		bulbasaur Bulbasaur = new bulbasaur("Bulbasaur", 45);
+		bulbasaur Bulbasaur = new bulbasaur();
 		
-		Bulbasaur.setPs(Bulbasaur.getPs()-daño);
-
-		System.out.println(Bulbasaur.getPs());
+		daño = Bulbasaur.Placaje();
+		System.out.println(daño);
+		
 	}
 
 }

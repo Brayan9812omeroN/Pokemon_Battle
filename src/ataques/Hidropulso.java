@@ -3,8 +3,12 @@ import interfaces.IAtack;
 
 public class Hidropulso implements IAtack{
 	
-	public void atack() {
-		System.out.println("Usa Hidropulso!");
+	private static final int damage = 16;
+	
+	@Override
+	public int atack(String name) {
+		System.out.println("¡" + name + " usa Hidropulso!");
+		return damage;
 	}
 
 }

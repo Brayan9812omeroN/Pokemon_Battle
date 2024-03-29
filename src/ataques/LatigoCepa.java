@@ -2,9 +2,13 @@ package ataques;
 import interfaces.IAtack;
 
 public class LatigoCepa implements IAtack{
+
+	private static final int damage = 14;
 	
-	public void atack() {
-		System.out.println("Usa Latigo Cepa!");
+	@Override
+	public int atack(String name) {
+		System.out.println("¡" + name + " usa Latigo Cepa!");
+		return damage;
 	}
 
 }

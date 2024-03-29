@@ -3,8 +3,12 @@ import interfaces.IAtack;
 
 public class Gruñido implements IAtack{
 	
-	public void atack() {
-		System.out.println("Usa Gruñido!");
+	private static final int damage = 5;
+	
+	@Override
+	public int atack(String name) {
+		System.out.println("¡" + name + " usa Gruñido!");
+		return damage;
 	}
 
 }

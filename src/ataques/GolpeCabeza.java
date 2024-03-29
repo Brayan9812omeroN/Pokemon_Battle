@@ -3,8 +3,12 @@ import interfaces.IAtack;
 
 public class GolpeCabeza implements IAtack{
 	
-	public void atack() {
-		System.out.println("Usa Golpe de Cabeza!");
+	private static final int damage = 20;
+	
+	@Override
+	public int atack(String name) {
+		System.out.println("¡" + name + " usa Golpe de Cabeza!");
+		return damage;
 	}
 
 }

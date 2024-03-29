@@ -3,8 +3,12 @@ import interfaces.IAtack;
 
 public class Ascuas implements IAtack{
 	
-	public void atack() {
-		System.out.println("Usa Ascuas!");
+	private static final int damage = 15;
+	
+	@Override
+	public int atack(String name) {
+		System.out.println("¡" + name + " usa Ascuas!");
+		return damage;
 	}
 
 }

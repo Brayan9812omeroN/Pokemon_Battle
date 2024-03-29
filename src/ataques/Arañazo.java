@@ -3,8 +3,12 @@ import interfaces.IAtack;
 
 public class Arañazo implements IAtack{
 	
-	public void atack() {
-		System.out.println("Usa Arañazo!");
+	private static final int damage = 10;
+	
+	@Override
+	public int atack(String name) {
+		System.out.println("¡" + name + " usa Arañazo!");
+		return damage;
 	}
 
 }

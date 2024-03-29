@@ -2,9 +2,13 @@ package ataques;
 import interfaces.IAtack;
 
 public class RayoBurbuja implements IAtack{
+
+	private static final int damage = 18;
 	
-	public void atack() {
-		System.out.println("Usa Rayo Burbuja!");
+	@Override
+	public int atack(String name) {
+		System.out.println("¡" + name + " usa Rayo Burbuja!");
+		return damage;
 	}
 
 }

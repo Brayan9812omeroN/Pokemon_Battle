@@ -2,6 +2,6 @@ package interfaces;
 
 public interface IAttackDamage {
 
-	public void attacdamage();
+	public int attacdamage(int _ps, int damage);
 	
 }

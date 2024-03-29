@@ -3,8 +3,12 @@ import interfaces.IAtack;
 
 public class Tornado implements IAtack{
 	
-	public void atack() {
-		System.out.println("Usa Tornado!");
+	private static final int damage = 20;
+	
+	@Override
+	public int atack(String name) {
+		System.out.println("¡" + name + " usa Tornado!");
+		return damage;
 	}
 
 }
