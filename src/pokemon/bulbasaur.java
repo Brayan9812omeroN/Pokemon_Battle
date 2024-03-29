@@ -6,8 +6,7 @@ import ataques.Placaje;
 import ataques.Somnifero;
 
 public class bulbasaur extends Pokemon {
-	
-	int PsCombat;
+
 
 	public bulbasaur() {
 		this.name = "Bulbasaur";

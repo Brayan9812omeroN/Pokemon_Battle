@@ -7,7 +7,6 @@ import ataques.Drenadoras;
 
 public class Caterpie extends Pokemon {
 	
-	int PsCombat;
 	
 	public Caterpie() {
 		this.name = "Caterpie";
