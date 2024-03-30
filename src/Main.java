@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 import abstracts.Pokemon;
+import notifiers.Notifier;
 import players.Computer;
 import players.player;
 
@@ -8,6 +9,9 @@ import players.player;
 public class Main {
 
 	public static void main(String[] args) {
+		
+		Notifier notifier = new Notifier();
+		
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Bienvenido a la batalla Pokémon!");
