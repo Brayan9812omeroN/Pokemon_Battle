@@ -1,16 +1,47 @@
-import pokemon.Caterpie;
-import pokemon.bulbasaur;
+import java.util.Scanner;
+
+import abstracts.Pokemon;
+import players.Computer;
+import players.player;
+
+
 public class Main {
 
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
 		
-		bulbasaur Bulbasaur = new bulbasaur();
-		Caterpie Caterpie = new Caterpie();
-		
-		
-		Caterpie.setPsCombat(Caterpie.getPsCombat(), Bulbasaur.LatigoCepa());
-		System.out.println(Caterpie.getPsCombat());
-		
-	}
+		System.out.println("Bienvenido a la batalla Pokémon!");
+		System.out.println("------------------------------------------------------");
+		System.out.println("¿Quieres jugar contra otro jugador o contra la máquina?");
+        System.out.println("1. Jugar contra otro jugador");
+        System.out.println("2. Jugar contra la máquina");
+        System.out.println("------------------------------------------------------");
+        int choice = scanner.nextInt();
+        
+        if (choice == 1) {
+            player player1 = new player();
+            player1.chooseTeam();
+            System.out.println(player1.getTeam());
+            
+            player player2 = new player();
+            player2.chooseTeam();
+            System.out.println(player2.getTeam());
+            
+            
+            
+        } else {
+        	player player1 = new player();
+        	player1.chooseTeam();
+        	System.out.println(player1.getTeam());
+            Computer com = new Computer();
+            com.chooseTeam();
+            System.out.println(com.getTeam());
+            
+            
 
+        }
+
+	}
+    		
 }
+
