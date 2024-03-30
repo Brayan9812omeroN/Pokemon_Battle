@@ -5,9 +5,9 @@ import ataques.Drenadoras;
 import ataques.Placaje;
 import ataques.Somnifero;
 
-public class bulbasaur extends Pokemon {
+public class Bulbasaur extends Pokemon {
 
-	public bulbasaur() {
+	public Bulbasaur() {
 		this.name = "Bulbasaur";
 		this.PsBase= 45;
 		this.PsCombat = this.PsBase;
