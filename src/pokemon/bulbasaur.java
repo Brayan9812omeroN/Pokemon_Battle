@@ -14,7 +14,7 @@ public class Bulbasaur extends Pokemon {
 		this.PsCombat = this.PsBase;
 	}
 	
-	//Ataques 
+	//Attacks 
 	
 	public int LatigoCepa(Pokemon attackingPokemon, Pokemon pokemonattacked) {
         return new LatigoCepa().attack(attackingPokemon, pokemonattacked);
